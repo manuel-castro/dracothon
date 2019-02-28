@@ -1,0 +1,1100 @@
+In file included from /usr/include/c++/5/array:35:0,
+                 from ./draco/attributes/geometry_attribute.h:18,
+                 from ./draco/attributes/point_attribute.h:23,
+                 from ./draco/point_cloud/point_cloud.h:20,
+                 from ./draco/mesh/mesh.h:25,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ./draco/attributes/geometry_indices.h:22:0,
+                 from ./draco/mesh/mesh.h:20,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/core/draco_index_type.h:69:3: error: ‘constexpr’ does not name a type
+   constexpr IndexType() : value_(ValueTypeT()) {}
+   ^
+./draco/core/draco_index_type.h:69:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:70:3: error: ‘constexpr’ does not name a type
+   constexpr explicit IndexType(ValueTypeT value) : value_(value) {}
+   ^
+./draco/core/draco_index_type.h:70:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:72:3: error: ‘constexpr’ does not name a type
+   constexpr ValueTypeT value() const { return value_; }
+   ^
+./draco/core/draco_index_type.h:72:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:74:3: error: ‘constexpr’ does not name a type
+   constexpr bool operator==(const IndexType &i) const {
+   ^
+./draco/core/draco_index_type.h:74:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:77:3: error: ‘constexpr’ does not name a type
+   constexpr bool operator==(const ValueTypeT &val) const {
+   ^
+./draco/core/draco_index_type.h:77:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:80:3: error: ‘constexpr’ does not name a type
+   constexpr bool operator!=(const IndexType &i) const {
+   ^
+./draco/core/draco_index_type.h:80:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:83:3: error: ‘constexpr’ does not name a type
+   constexpr bool operator!=(const ValueTypeT &val) const {
+   ^
+./draco/core/draco_index_type.h:83:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:86:3: error: ‘constexpr’ does not name a type
+   constexpr bool operator<(const IndexType &i) const {
+   ^
+./draco/core/draco_index_type.h:86:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:89:3: error: ‘constexpr’ does not name a type
+   constexpr bool operator<(const ValueTypeT &val) const { return value_ < val; }
+   ^
+./draco/core/draco_index_type.h:89:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:90:3: error: ‘constexpr’ does not name a type
+   constexpr bool operator>(const IndexType &i) const {
+   ^
+./draco/core/draco_index_type.h:90:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:93:3: error: ‘constexpr’ does not name a type
+   constexpr bool operator>(const ValueTypeT &val) const { return value_ > val; }
+   ^
+./draco/core/draco_index_type.h:93:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:94:3: error: ‘constexpr’ does not name a type
+   constexpr bool operator>=(const IndexType &i) const {
+   ^
+./draco/core/draco_index_type.h:94:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:97:3: error: ‘constexpr’ does not name a type
+   constexpr bool operator>=(const ValueTypeT &val) const {
+   ^
+./draco/core/draco_index_type.h:97:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:121:3: error: ‘constexpr’ does not name a type
+   constexpr ThisIndexType operator+(const IndexType &i) const {
+   ^
+./draco/core/draco_index_type.h:121:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:124:3: error: ‘constexpr’ does not name a type
+   constexpr ThisIndexType operator+(const ValueTypeT &val) const {
+   ^
+./draco/core/draco_index_type.h:124:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:127:3: error: ‘constexpr’ does not name a type
+   constexpr ThisIndexType operator-(const IndexType &i) const {
+   ^
+./draco/core/draco_index_type.h:127:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:130:3: error: ‘constexpr’ does not name a type
+   constexpr ThisIndexType operator-(const ValueTypeT &val) const {
+   ^
+./draco/core/draco_index_type.h:130:3: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/draco_index_type.h:175:8: error: ‘hash’ is not a class template
+ struct hash<draco::IndexType<ValueTypeT, TagT>> {
+        ^
+./draco/core/draco_index_type.h:175:46: error: ‘>>’ should be ‘> >’ within a nested template argument list
+ struct hash<draco::IndexType<ValueTypeT, TagT>> {
+                                              ^
+In file included from ./draco/mesh/mesh.h:20:0,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/attributes/geometry_indices.h:38:8: error: ‘constexpr’ does not name a type
+ static constexpr AttributeValueIndex kInvalidAttributeValueIndex(
+        ^
+./draco/attributes/geometry_indices.h:38:8: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/attributes/geometry_indices.h:40:8: error: ‘constexpr’ does not name a type
+ static constexpr PointIndex kInvalidPointIndex(
+        ^
+./draco/attributes/geometry_indices.h:40:8: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/attributes/geometry_indices.h:42:8: error: ‘constexpr’ does not name a type
+ static constexpr VertexIndex kInvalidVertexIndex(
+        ^
+./draco/attributes/geometry_indices.h:42:8: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/attributes/geometry_indices.h:44:8: error: ‘constexpr’ does not name a type
+ static constexpr CornerIndex kInvalidCornerIndex(
+        ^
+./draco/attributes/geometry_indices.h:44:8: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/attributes/geometry_indices.h:46:8: error: ‘constexpr’ does not name a type
+ static constexpr FaceIndex kInvalidFaceIndex(
+        ^
+./draco/attributes/geometry_indices.h:46:8: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+In file included from ./draco/mesh/mesh.h:21:0,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/core/hash_utils.h: In function ‘size_t draco::HashCombine(T1, T2)’:
+./draco/core/hash_utils.h:27:36: error: wrong number of template arguments (1, should be 2)
+   const size_t hash1 = std::hash<T1>()(a);
+                                    ^
+In file included from ./draco/attributes/geometry_indices.h:22:0,
+                 from ./draco/mesh/mesh.h:20,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/core/draco_index_type.h:175:46: note: provided for ‘template<class ValueTypeT, class TagT> struct std::hash’
+ struct hash<draco::IndexType<ValueTypeT, TagT>> {
+                                              ^
+In file included from ./draco/mesh/mesh.h:21:0,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/core/hash_utils.h:28:36: error: wrong number of template arguments (1, should be 2)
+   const size_t hash2 = std::hash<T2>()(b);
+                                    ^
+In file included from ./draco/attributes/geometry_indices.h:22:0,
+                 from ./draco/mesh/mesh.h:20,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/core/draco_index_type.h:175:46: note: provided for ‘template<class ValueTypeT, class TagT> struct std::hash’
+ struct hash<draco::IndexType<ValueTypeT, TagT>> {
+                                              ^
+In file included from ./draco/mesh/mesh.h:21:0,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/core/hash_utils.h: In function ‘size_t draco::HashCombine(T, size_t)’:
+./draco/core/hash_utils.h:34:35: error: wrong number of template arguments (1, should be 2)
+   const size_t hasha = std::hash<T>()(a);
+                                   ^
+In file included from ./draco/attributes/geometry_indices.h:22:0,
+                 from ./draco/mesh/mesh.h:20,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/core/draco_index_type.h:175:46: note: provided for ‘template<class ValueTypeT, class TagT> struct std::hash’
+ struct hash<draco::IndexType<ValueTypeT, TagT>> {
+                                              ^
+In file included from ./draco/mesh/mesh.h:21:0,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/core/hash_utils.h: In member function ‘size_t draco::HashArray<T>::operator()(const T&) const’:
+./draco/core/hash_utils.h:50:34: error: ‘tuple_size’ is not a member of ‘std’
+     for (unsigned int i = 0; i < std::tuple_size<T>::value; ++i) {
+                                  ^
+./draco/core/hash_utils.h:50:51: error: expected primary-expression before ‘>’ token
+     for (unsigned int i = 0; i < std::tuple_size<T>::value; ++i) {
+                                                   ^
+./draco/core/hash_utils.h:50:52: error: ‘::value’ has not been declared
+     for (unsigned int i = 0; i < std::tuple_size<T>::value; ++i) {
+                                                    ^
+./draco/core/hash_utils.h: In member function ‘size_t draco::HashArray<T>::ValueHash(const V&) const’:
+./draco/core/hash_utils.h:58:23: error: wrong number of template arguments (1, should be 2)
+     return std::hash<V>()(val);
+                       ^
+In file included from ./draco/attributes/geometry_indices.h:22:0,
+                 from ./draco/mesh/mesh.h:20,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/core/draco_index_type.h:175:46: note: provided for ‘template<class ValueTypeT, class TagT> struct std::hash’
+ struct hash<draco::IndexType<ValueTypeT, TagT>> {
+                                              ^
+In file included from ./draco/mesh/mesh.h:23:0,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/core/status.h: At global scope:
+./draco/core/status.h:37:34: warning: defaulted and deleted functions only available with -std=c++11 or -std=gnu++11
+   Status(const Status &status) = default;
+                                  ^
+./draco/core/status.h:38:17: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   Status(Status &&status) = default;
+                 ^
+./draco/core/status.h:38:29: warning: defaulted and deleted functions only available with -std=c++11 or -std=gnu++11
+   Status(Status &&status) = default;
+                             ^
+./draco/core/status.h:38:29: error: invalid constructor; you probably meant ‘draco::Status (const draco::Status&)’
+./draco/core/status.h:50:39: warning: defaulted and deleted functions only available with -std=c++11 or -std=gnu++11
+   Status &operator=(const Status &) = default;
+                                       ^
+In file included from ./draco/attributes/point_attribute.h:22:0,
+                 from ./draco/point_cloud/point_cloud.h:20,
+                 from ./draco/mesh/mesh.h:25,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/attributes/attribute_transform_data.h:33:64: warning: defaulted and deleted functions only available with -std=c++11 or -std=gnu++11
+   AttributeTransformData(const AttributeTransformData &data) = default;
+                                                                ^
+In file included from ./draco/attributes/point_attribute.h:23:0,
+                 from ./draco/point_cloud/point_cloud.h:20,
+                 from ./draco/mesh/mesh.h:25,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/attributes/geometry_attribute.h:76:8: error: ‘array’ in namespace ‘std’ does not name a template type
+   std::array<T, att_components_t> GetValue(
+        ^
+./draco/attributes/geometry_attribute.h:90:22: error: ‘std::array’ has not been declared
+                 std::array<T, att_components_t> *out) const {
+                      ^
+./draco/attributes/geometry_attribute.h:90:27: error: expected ‘,’ or ‘...’ before ‘<’ token
+                 std::array<T, att_components_t> *out) const {
+                           ^
+./draco/attributes/geometry_attribute.h: In member function ‘bool draco::GeometryAttribute::IsValid() const’:
+./draco/attributes/geometry_attribute.h:64:44: error: ‘nullptr’ was not declared in this scope
+   bool IsValid() const { return buffer_ != nullptr; }
+                                            ^
+./draco/attributes/geometry_attribute.h: In member function ‘bool draco::GeometryAttribute::GetValue(draco::AttributeValueIndex, int) const’:
+./draco/attributes/geometry_attribute.h:92:70: error: ‘draco::AttributeValueIndex {aka class draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>}’ has no member named ‘value’
+     const int64_t byte_pos = byte_offset_ + byte_stride_ * att_index.value();
+                                                                      ^
+./draco/attributes/geometry_attribute.h:94:28: error: ‘out’ was not declared in this scope
+     if (byte_pos + sizeof(*out) > buffer_->data_size())
+                            ^
+./draco/attributes/geometry_attribute.h:96:33: error: ‘out’ was not declared in this scope
+     buffer_->Read(byte_pos, &((*out)[0]), sizeof(*out));
+                                 ^
+./draco/attributes/geometry_attribute.h: In member function ‘int64_t draco::GeometryAttribute::GetBytePos(draco::AttributeValueIndex) const’:
+./draco/attributes/geometry_attribute.h:102:52: error: ‘draco::AttributeValueIndex {aka class draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>}’ has no member named ‘value’
+     return byte_offset_ + byte_stride_ * att_index.value();
+                                                    ^
+./draco/attributes/geometry_attribute.h: In member function ‘void draco::GeometryAttribute::GetValue(draco::AttributeValueIndex, void*) const’:
+./draco/attributes/geometry_attribute.h:117:70: error: ‘draco::AttributeValueIndex {aka class draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>}’ has no member named ‘value’
+     const int64_t byte_pos = byte_offset_ + byte_stride_ * att_index.value();
+                                                                      ^
+./draco/attributes/geometry_attribute.h: In member function ‘bool draco::GeometryAttribute::ConvertValue(draco::AttributeValueIndex, int8_t, OutT*) const’:
+./draco/attributes/geometry_attribute.h:142:20: error: ‘nullptr’ was not declared in this scope
+     if (out_val == nullptr)
+                    ^
+./draco/attributes/geometry_attribute.h: In member function ‘bool draco::GeometryAttribute::ConvertTypedValue(draco::AttributeValueIndex, int8_t, OutT*) const’:
+./draco/attributes/geometry_attribute.h:241:11: error: ‘is_integral’ is not a member of ‘std’
+       if (std::is_integral<T>::value && std::is_floating_point<OutT>::value &&
+           ^
+./draco/attributes/geometry_attribute.h:241:29: error: expected primary-expression before ‘>’ token
+       if (std::is_integral<T>::value && std::is_floating_point<OutT>::value &&
+                             ^
+./draco/attributes/geometry_attribute.h:241:30: error: ‘::value’ has not been declared
+       if (std::is_integral<T>::value && std::is_floating_point<OutT>::value &&
+                              ^
+./draco/attributes/geometry_attribute.h:241:41: error: ‘is_floating_point’ is not a member of ‘std’
+       if (std::is_integral<T>::value && std::is_floating_point<OutT>::value &&
+                                         ^
+./draco/attributes/geometry_attribute.h:241:68: error: expected primary-expression before ‘>’ token
+       if (std::is_integral<T>::value && std::is_floating_point<OutT>::value &&
+                                                                    ^
+./draco/attributes/geometry_attribute.h:241:69: error: ‘::value’ has not been declared
+       if (std::is_integral<T>::value && std::is_floating_point<OutT>::value &&
+                                                                     ^
+In file included from ./draco/attributes/point_attribute.h:24:0,
+                 from ./draco/point_cloud/point_cloud.h:20,
+                 from ./draco/mesh/mesh.h:25,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/core/draco_index_type_vector.h: At global scope:
+./draco/core/draco_index_type_vector.h:55:29: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   void push_back(ValueTypeT &&val) { vector_.push_back(std::move(val)); }
+                             ^
+./draco/core/draco_index_type_vector.h: In member function ‘void draco::IndexTypeVector<IndexTypeT, ValueTypeT>::push_back(ValueTypeT)’:
+./draco/core/draco_index_type_vector.h:55:56: error: ‘move’ is not a member of ‘std’
+   void push_back(ValueTypeT &&val) { vector_.push_back(std::move(val)); }
+                                                        ^
+./draco/core/draco_index_type_vector.h:55:66: error: ‘val’ was not declared in this scope
+   void push_back(ValueTypeT &&val) { vector_.push_back(std::move(val)); }
+                                                                  ^
+In file included from ./draco/point_cloud/point_cloud.h:20:0,
+                 from ./draco/mesh/mesh.h:25,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/attributes/point_attribute.h: At global scope:
+./draco/attributes/point_attribute.h:41:33: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   PointAttribute(PointAttribute &&attribute) = default;
+                                 ^
+./draco/attributes/point_attribute.h:41:48: warning: defaulted and deleted functions only available with -std=c++11 or -std=gnu++11
+   PointAttribute(PointAttribute &&attribute) = default;
+                                                ^
+./draco/attributes/point_attribute.h:41:48: error: invalid constructor; you probably meant ‘draco::PointAttribute (const draco::PointAttribute&)’
+./draco/attributes/point_attribute.h:42:44: error: expected ‘,’ or ‘...’ before ‘&&’ token
+   PointAttribute &operator=(PointAttribute &&attribute) = default;
+                                            ^
+./draco/attributes/point_attribute.h:42:59: warning: defaulted and deleted functions only available with -std=c++11 or -std=gnu++11
+   PointAttribute &operator=(PointAttribute &&attribute) = default;
+                                                           ^
+./draco/attributes/point_attribute.h:125:12: error: ‘std::unique_ptr’ has not been declared
+       std::unique_ptr<AttributeTransformData> transform_data) {
+            ^
+./draco/attributes/point_attribute.h:125:22: error: expected ‘,’ or ‘...’ before ‘<’ token
+       std::unique_ptr<AttributeTransformData> transform_data) {
+                      ^
+./draco/attributes/point_attribute.h:144:8: error: ‘unique_ptr’ in namespace ‘std’ does not name a template type
+   std::unique_ptr<DataBuffer> attribute_buffer_;
+        ^
+./draco/attributes/point_attribute.h:155:8: error: ‘unique_ptr’ in namespace ‘std’ does not name a template type
+   std::unique_ptr<AttributeTransformData> attribute_transform_data_;
+        ^
+./draco/attributes/point_attribute.h:42:19: error: defaulted declaration ‘draco::PointAttribute& draco::PointAttribute::operator=(draco::PointAttribute)’
+   PointAttribute &operator=(PointAttribute &&attribute) = default;
+                   ^
+./draco/attributes/point_attribute.h:42:19: error: does not match expected signature ‘draco::PointAttribute& draco::PointAttribute::operator=(draco::PointAttribute&)’
+./draco/attributes/point_attribute.h: In member function ‘draco::AttributeValueIndex draco::PointAttribute::mapped_index(draco::PointIndex) const’:
+./draco/attributes/point_attribute.h:53:46: error: ‘draco::PointIndex {aka class draco::IndexType<unsigned int, draco::PointIndex_tag_type_>}’ has no member named ‘value’
+       return AttributeValueIndex(point_index.value());
+                                              ^
+./draco/attributes/point_attribute.h: In member function ‘draco::DataBuffer* draco::PointAttribute::buffer() const’:
+./draco/attributes/point_attribute.h:56:39: error: ‘attribute_buffer_’ was not declared in this scope
+   DataBuffer *buffer() const { return attribute_buffer_.get(); }
+                                       ^
+./draco/attributes/point_attribute.h: In member function ‘void draco::PointAttribute::SetExplicitMapping(size_t)’:
+./draco/attributes/point_attribute.h:85:37: error: ‘kInvalidAttributeValueIndex’ was not declared in this scope
+     indices_map_.resize(num_points, kInvalidAttributeValueIndex);
+                                     ^
+./draco/attributes/point_attribute.h: In member function ‘void draco::PointAttribute::SetAttributeValue(draco::AttributeValueIndex, const void*)’:
+./draco/attributes/point_attribute.h:98:42: error: ‘draco::AttributeValueIndex {aka class draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>}’ has no member named ‘value’
+     const int64_t byte_pos = entry_index.value() * byte_stride();
+                                          ^
+./draco/attributes/point_attribute.h: In member function ‘void draco::PointAttribute::SetAttributeTransformData(int)’:
+./draco/attributes/point_attribute.h:126:5: error: ‘attribute_transform_data_’ was not declared in this scope
+     attribute_transform_data_ = std::move(transform_data);
+     ^
+./draco/attributes/point_attribute.h:126:33: error: ‘move’ is not a member of ‘std’
+     attribute_transform_data_ = std::move(transform_data);
+                                 ^
+./draco/attributes/point_attribute.h:126:43: error: ‘transform_data’ was not declared in this scope
+     attribute_transform_data_ = std::move(transform_data);
+                                           ^
+./draco/attributes/point_attribute.h: In member function ‘const draco::AttributeTransformData* draco::PointAttribute::GetAttributeTransformData() const’:
+./draco/attributes/point_attribute.h:129:12: error: ‘attribute_transform_data_’ was not declared in this scope
+     return attribute_transform_data_.get();
+            ^
+./draco/attributes/point_attribute.h: In member function ‘size_t draco::PointAttributeHasher::operator()(const draco::PointAttribute&) const’:
+./draco/attributes/point_attribute.h:174:19: error: ‘const class draco::PointAttribute’ has no member named ‘attribute_buffer_’
+     if (attribute.attribute_buffer_ != nullptr) {
+                   ^
+./draco/attributes/point_attribute.h:174:40: error: ‘nullptr’ was not declared in this scope
+     if (attribute.attribute_buffer_ != nullptr) {
+                                        ^
+./draco/attributes/point_attribute.h:176:52: error: ‘const class draco::PointAttribute’ has no member named ‘attribute_buffer_’
+           reinterpret_cast<const char *>(attribute.attribute_buffer_->data()),
+                                                    ^
+./draco/attributes/point_attribute.h:177:21: error: ‘const class draco::PointAttribute’ has no member named ‘attribute_buffer_’
+           attribute.attribute_buffer_->data_size());
+                     ^
+In file included from ./draco/core/bounding_box.h:18:0,
+                 from ./draco/point_cloud/point_cloud.h:21,
+                 from ./draco/mesh/mesh.h:25,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/core/vector_d.h: At global scope:
+./draco/core/vector_d.h:30:10: error: ‘constexpr’ does not name a type
+   static constexpr int dimension = dimension_t;
+          ^
+./draco/core/vector_d.h:30:10: note: C++11 ‘constexpr’ only available with -std=c++11 or -std=gnu++11
+./draco/core/vector_d.h:236:8: error: ‘array’ in namespace ‘std’ does not name a template type
+   std::array<Scalar, dimension> v_;
+        ^
+./draco/core/vector_d.h: In constructor ‘draco::VectorD<ScalarT, dimension_t>::VectorD()’:
+./draco/core/vector_d.h:39:25: error: ‘dimension’ was not declared in this scope
+     for (int i = 0; i < dimension; ++i)
+                         ^
+./draco/core/vector_d.h: In constructor ‘draco::VectorD<ScalarT, dimension_t>::VectorD(const Scalar&, const Scalar&)’:
+./draco/core/vector_d.h:49:49: error: class ‘draco::VectorD<ScalarT, dimension_t>’ does not have any field named ‘v_’
+   VectorD(const Scalar &c0, const Scalar &c1) : v_({{c0, c1}}) {
+                                                 ^
+./draco/core/vector_d.h:49:52: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+   VectorD(const Scalar &c0, const Scalar &c1) : v_({{c0, c1}}) {
+                                                    ^
+./draco/core/vector_d.h:51:5: error: ‘v_’ was not declared in this scope
+     v_[0] = c0;
+     ^
+./draco/core/vector_d.h: In constructor ‘draco::VectorD<ScalarT, dimension_t>::VectorD(const Scalar&, const Scalar&, const Scalar&)’:
+./draco/core/vector_d.h:56:9: error: class ‘draco::VectorD<ScalarT, dimension_t>’ does not have any field named ‘v_’
+       : v_({{c0, c1, c2}}) {
+         ^
+./draco/core/vector_d.h:56:12: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+       : v_({{c0, c1, c2}}) {
+            ^
+./draco/core/vector_d.h: In constructor ‘draco::VectorD<ScalarT, dimension_t>::VectorD(const Scalar&, const Scalar&, const Scalar&, const Scalar&)’:
+./draco/core/vector_d.h:62:9: error: class ‘draco::VectorD<ScalarT, dimension_t>’ does not have any field named ‘v_’
+       : v_({{c0, c1, c2, c3}}) {
+         ^
+./draco/core/vector_d.h:62:12: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+       : v_({{c0, c1, c2, c3}}) {
+            ^
+./draco/core/vector_d.h: In constructor ‘draco::VectorD<ScalarT, dimension_t>::VectorD(const Scalar&, const Scalar&, const Scalar&, const Scalar&, const Scalar&)’:
+./draco/core/vector_d.h:68:9: error: class ‘draco::VectorD<ScalarT, dimension_t>’ does not have any field named ‘v_’
+       : v_({{c0, c1, c2, c3, c4}}) {
+         ^
+./draco/core/vector_d.h:68:12: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+       : v_({{c0, c1, c2, c3, c4}}) {
+            ^
+./draco/core/vector_d.h: In constructor ‘draco::VectorD<ScalarT, dimension_t>::VectorD(const Scalar&, const Scalar&, const Scalar&, const Scalar&, const Scalar&, const Scalar&)’:
+./draco/core/vector_d.h:74:9: error: class ‘draco::VectorD<ScalarT, dimension_t>’ does not have any field named ‘v_’
+       : v_({{c0, c1, c2, c3, c4, c5}}) {
+         ^
+./draco/core/vector_d.h:74:12: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+       : v_({{c0, c1, c2, c3, c4, c5}}) {
+            ^
+./draco/core/vector_d.h: In constructor ‘draco::VectorD<ScalarT, dimension_t>::VectorD(const Scalar&, const Scalar&, const Scalar&, const Scalar&, const Scalar&, const Scalar&, const Scalar&)’:
+./draco/core/vector_d.h:81:9: error: class ‘draco::VectorD<ScalarT, dimension_t>’ does not have any field named ‘v_’
+       : v_({{c0, c1, c2, c3, c4, c5, c6}}) {
+         ^
+./draco/core/vector_d.h:81:12: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+       : v_({{c0, c1, c2, c3, c4, c5, c6}}) {
+            ^
+./draco/core/vector_d.h: In copy constructor ‘draco::VectorD<ScalarT, dimension_t>::VectorD(const Self&)’:
+./draco/core/vector_d.h:86:25: error: ‘dimension’ was not declared in this scope
+     for (int i = 0; i < dimension; ++i)
+                         ^
+./draco/core/vector_d.h: In constructor ‘draco::VectorD<ScalarT, dimension_t>::VectorD(const draco::VectorD<OtherScalarT, other_dimension_t>&)’:
+./draco/core/vector_d.h:99:25: error: ‘dimension’ was not declared in this scope
+     for (int i = 0; i < dimension; ++i) {
+                         ^
+./draco/core/vector_d.h:101:9: error: ‘v_’ was not declared in this scope
+         v_[i] = Scalar(src_vector[i]);
+         ^
+./draco/core/vector_d.h:103:9: error: ‘v_’ was not declared in this scope
+         v_[i] = Scalar(0);
+         ^
+./draco/core/vector_d.h: In member function ‘draco::VectorD<ScalarT, dimension_t>::Scalar& draco::VectorD<ScalarT, dimension_t>::operator[](int)’:
+./draco/core/vector_d.h:107:38: error: ‘v_’ was not declared in this scope
+   Scalar &operator[](int i) { return v_[i]; }
+                                      ^
+./draco/core/vector_d.h: In member function ‘const Scalar& draco::VectorD<ScalarT, dimension_t>::operator[](int) const’:
+./draco/core/vector_d.h:108:50: error: ‘v_’ was not declared in this scope
+   const Scalar &operator[](int i) const { return v_[i]; }
+                                                  ^
+./draco/core/vector_d.h: In member function ‘draco::VectorD<ScalarT, dimension_t>::Scalar& draco::VectorD<ScalarT, dimension_t>::operator()(int)’:
+./draco/core/vector_d.h:111:38: error: ‘v_’ was not declared in this scope
+   Scalar &operator()(int i) { return v_[i]; }
+                                      ^
+./draco/core/vector_d.h: In member function ‘const Scalar& draco::VectorD<ScalarT, dimension_t>::operator()(int) const’:
+./draco/core/vector_d.h:112:50: error: ‘v_’ was not declared in this scope
+   const Scalar &operator()(int i) const { return v_[i]; }
+                                                  ^
+./draco/core/vector_d.h: In member function ‘draco::VectorD<ScalarT, dimension_t>::Self draco::VectorD<ScalarT, dimension_t>::operator-() const’:
+./draco/core/vector_d.h:117:25: error: ‘dimension’ was not declared in this scope
+     for (int i = 0; i < dimension; ++i) {
+                         ^
+./draco/core/vector_d.h: In member function ‘draco::VectorD<ScalarT, dimension_t>::Self draco::VectorD<ScalarT, dimension_t>::operator+(const Self&) const’:
+./draco/core/vector_d.h:126:25: error: ‘dimension’ was not declared in this scope
+     for (int i = 0; i < dimension; ++i) {
+                         ^
+./draco/core/vector_d.h: In member function ‘draco::VectorD<ScalarT, dimension_t>::Self draco::VectorD<ScalarT, dimension_t>::operator-(const Self&) const’:
+./draco/core/vector_d.h:134:25: error: ‘dimension’ was not declared in this scope
+     for (int i = 0; i < dimension; ++i) {
+                         ^
+./draco/core/vector_d.h: In member function ‘draco::VectorD<ScalarT, dimension_t>::Self draco::VectorD<ScalarT, dimension_t>::operator*(const Scalar&) const’:
+./draco/core/vector_d.h:142:25: error: ‘dimension’ was not declared in this scope
+     for (int i = 0; i < dimension; ++i) {
+                         ^
+./draco/core/vector_d.h: In member function ‘draco::VectorD<ScalarT, dimension_t>::Self draco::VectorD<ScalarT, dimension_t>::operator/(const Scalar&) const’:
+./draco/core/vector_d.h:150:25: error: ‘dimension’ was not declared in this scope
+     for (int i = 0; i < dimension; ++i) {
+                         ^
+./draco/core/vector_d.h: In member function ‘draco::VectorD<ScalarT, dimension_t>::Self draco::VectorD<ScalarT, dimension_t>::operator+(const Scalar&) const’:
+./draco/core/vector_d.h:158:25: error: ‘dimension’ was not declared in this scope
+     for (int i = 0; i < dimension; ++i) {
+                         ^
+./draco/core/vector_d.h: In member function ‘draco::VectorD<ScalarT, dimension_t>::Self draco::VectorD<ScalarT, dimension_t>::operator-(const Scalar&) const’:
+./draco/core/vector_d.h:166:25: error: ‘dimension’ was not declared in this scope
+     for (int i = 0; i < dimension; ++i) {
+                         ^
+./draco/core/vector_d.h: In member function ‘bool draco::VectorD<ScalarT, dimension_t>::operator==(const Self&) const’:
+./draco/core/vector_d.h:173:25: error: ‘dimension’ was not declared in this scope
+     for (int i = 0; i < dimension; ++i) {
+                         ^
+./draco/core/vector_d.h: In member function ‘bool draco::VectorD<ScalarT, dimension_t>::operator<(const Self&) const’:
+./draco/core/vector_d.h:183:25: error: ‘dimension’ was not declared in this scope
+     for (int i = 0; i < dimension - 1; ++i) {
+                         ^
+./draco/core/vector_d.h:184:11: error: ‘v_’ was not declared in this scope
+       if (v_[i] < x.v_[i])
+           ^
+./draco/core/vector_d.h:186:11: error: ‘v_’ was not declared in this scope
+       if (v_[i] > x.v_[i])
+           ^
+./draco/core/vector_d.h:190:9: error: ‘v_’ was not declared in this scope
+     if (v_[dimension - 1] < x.v_[dimension - 1])
+         ^
+./draco/core/vector_d.h:190:12: error: ‘dimension’ was not declared in this scope
+     if (v_[dimension - 1] < x.v_[dimension - 1])
+            ^
+./draco/core/vector_d.h: In member function ‘draco::VectorD<ScalarT, dimension_t>::Scalar draco::VectorD<ScalarT, dimension_t>::AbsSum() const’:
+./draco/core/vector_d.h:201:25: error: ‘dimension’ was not declared in this scope
+     for (int i = 0; i < dimension; ++i) {
+                         ^
+./draco/core/vector_d.h:202:26: error: ‘v_’ was not declared in this scope
+       result += std::abs(v_[i]);
+                          ^
+./draco/core/vector_d.h: In member function ‘draco::VectorD<ScalarT, dimension_t>::Scalar draco::VectorD<ScalarT, dimension_t>::Dot(const Self&) const’:
+./draco/core/vector_d.h:209:25: error: ‘dimension’ was not declared in this scope
+     for (int i = 0; i < dimension; ++i) {
+                         ^
+./draco/core/vector_d.h: In member function ‘void draco::VectorD<ScalarT, dimension_t>::Normalize()’:
+./draco/core/vector_d.h:220:25: error: ‘dimension’ was not declared in this scope
+     for (int i = 0; i < dimension; ++i) {
+                         ^
+./draco/core/vector_d.h: In member function ‘const Scalar& draco::VectorD<ScalarT, dimension_t>::MaxCoeff() const’:
+./draco/core/vector_d.h:226:30: error: ‘v_’ was not declared in this scope
+     return *std::max_element(v_.begin(), v_.end());
+                              ^
+./draco/core/vector_d.h: In member function ‘const Scalar& draco::VectorD<ScalarT, dimension_t>::MinCoeff() const’:
+./draco/core/vector_d.h:230:30: error: ‘v_’ was not declared in this scope
+     return *std::min_element(v_.begin(), v_.end());
+                              ^
+./draco/core/vector_d.h: In member function ‘draco::VectorD<ScalarT, dimension_t>::Scalar* draco::VectorD<ScalarT, dimension_t>::data()’:
+./draco/core/vector_d.h:233:29: error: ‘v_’ was not declared in this scope
+   Scalar *data() { return &(v_[0]); }
+                             ^
+./draco/core/vector_d.h: In function ‘draco::VectorD<ScalarT, 3> draco::CrossProduct(const draco::VectorD<ScalarT, 3>&, const draco::VectorD<ScalarT, 3>&)’:
+./draco/core/vector_d.h:270:17: error: ‘is_signed’ is not a member of ‘std’
+   static_assert(std::is_signed<ScalarT>::value,
+                 ^
+./draco/core/vector_d.h:270:39: error: expected primary-expression before ‘>’ token
+   static_assert(std::is_signed<ScalarT>::value,
+                                       ^
+./draco/core/vector_d.h:270:40: error: ‘::value’ has not been declared
+   static_assert(std::is_signed<ScalarT>::value,
+                                        ^
+./draco/core/vector_d.h:271:50: error: there are no arguments to ‘static_assert’ that depend on a template parameter, so a declaration of ‘static_assert’ must be available [-fpermissive]
+                 "ScalarT must be a signed type. ");
+                                                  ^
+./draco/core/vector_d.h:271:50: note: (if you use ‘-fpermissive’, G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+In file included from ./draco/metadata/geometry_metadata.h:18:0,
+                 from ./draco/point_cloud/point_cloud.h:23,
+                 from ./draco/mesh/mesh.h:25,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/metadata/metadata.h: At global scope:
+./draco/metadata/metadata.h:147:28: error: ‘std::unique_ptr’ has not been declared
+                       std::unique_ptr<Metadata> sub_metadata);
+                            ^
+./draco/metadata/metadata.h:147:38: error: expected ‘,’ or ‘...’ before ‘<’ token
+                       std::unique_ptr<Metadata> sub_metadata);
+                                      ^
+./draco/metadata/metadata.h:153:14: error: ‘unordered_map’ in namespace ‘std’ does not name a template type
+   const std::unordered_map<std::string, EntryValue> &entries() const {
+              ^
+./draco/metadata/metadata.h:156:14: error: ‘unordered_map’ in namespace ‘std’ does not name a template type
+   const std::unordered_map<std::string, std::unique_ptr<Metadata>>
+              ^
+./draco/metadata/metadata.h:181:8: error: ‘unordered_map’ in namespace ‘std’ does not name a template type
+   std::unordered_map<std::string, EntryValue> entries_;
+        ^
+./draco/metadata/metadata.h:182:8: error: ‘unordered_map’ in namespace ‘std’ does not name a template type
+   std::unordered_map<std::string, std::unique_ptr<Metadata>> sub_metadatas_;
+        ^
+./draco/metadata/metadata.h: In member function ‘int draco::Metadata::num_entries() const’:
+./draco/metadata/metadata.h:152:53: error: ‘entries_’ was not declared in this scope
+   int num_entries() const { return static_cast<int>(entries_.size()); }
+                                                     ^
+./draco/metadata/metadata.h: In member function ‘void draco::Metadata::AddEntry(const string&, const DataTypeT&)’:
+./draco/metadata/metadata.h:165:16: error: ‘itr’ does not name a type
+     const auto itr = entries_.find(entry_name);
+                ^
+./draco/metadata/metadata.h:166:9: error: ‘itr’ was not declared in this scope
+     if (itr != entries_.end())
+         ^
+./draco/metadata/metadata.h:166:16: error: ‘entries_’ was not declared in this scope
+     if (itr != entries_.end())
+                ^
+./draco/metadata/metadata.h:168:5: error: ‘entries_’ was not declared in this scope
+     entries_.insert(std::make_pair(entry_name, EntryValue(entry_value)));
+     ^
+./draco/metadata/metadata.h: In member function ‘bool draco::Metadata::GetEntry(const string&, DataTypeT*) const’:
+./draco/metadata/metadata.h:174:16: error: ‘itr’ does not name a type
+     const auto itr = entries_.find(entry_name);
+                ^
+./draco/metadata/metadata.h:175:9: error: ‘itr’ was not declared in this scope
+     if (itr == entries_.end()) {
+         ^
+./draco/metadata/metadata.h:175:16: error: ‘entries_’ was not declared in this scope
+     if (itr == entries_.end()) {
+                ^
+./draco/metadata/metadata.h:178:12: error: ‘itr’ was not declared in this scope
+     return itr->second.GetValue(entry_value);
+            ^
+./draco/metadata/metadata.h: In member function ‘size_t draco::MetadataHasher::operator()(const draco::Metadata&) const’:
+./draco/metadata/metadata.h:191:30: error: ‘const class draco::Metadata’ has no member named ‘entries_’
+         HashCombine(metadata.entries_.size(), metadata.sub_metadatas_.size());
+                              ^
+./draco/metadata/metadata.h:191:56: error: ‘const class draco::Metadata’ has no member named ‘sub_metadatas_’
+         HashCombine(metadata.entries_.size(), metadata.sub_metadatas_.size());
+                                                        ^
+./draco/metadata/metadata.h:193:22: error: ISO C++ forbids declaration of ‘entry’ with no type [-fpermissive]
+     for (const auto &entry : metadata.entries_) {
+                      ^
+./draco/metadata/metadata.h:193:30: warning: range-based ‘for’ loops only available with -std=c++11 or -std=gnu++11
+     for (const auto &entry : metadata.entries_) {
+                              ^
+./draco/metadata/metadata.h:193:39: error: ‘const class draco::Metadata’ has no member named ‘entries_’
+     for (const auto &entry : metadata.entries_) {
+                                       ^
+./draco/metadata/metadata.h:194:32: error: request for member ‘first’ in ‘entry’, which is of non-class type ‘const int’
+       hash = HashCombine(entry.first, hash);
+                                ^
+./draco/metadata/metadata.h:195:51: error: request for member ‘second’ in ‘entry’, which is of non-class type ‘const int’
+       hash = HashCombine(entry_value_hasher(entry.second), hash);
+                                                   ^
+./draco/metadata/metadata.h:198:15: error: expected unqualified-id before ‘&&’ token
+     for (auto &&sub_metadata : metadata.sub_metadatas_) {
+               ^
+./draco/metadata/metadata.h:198:15: error: expected ‘;’ before ‘&&’ token
+./draco/metadata/metadata.h:198:30: error: expected ‘;’ before ‘:’ token
+     for (auto &&sub_metadata : metadata.sub_metadatas_) {
+                              ^
+./draco/metadata/metadata.h:198:30: error: expected primary-expression before ‘:’ token
+./draco/metadata/metadata.h:198:30: error: expected ‘)’ before ‘:’ token
+./draco/metadata/metadata.h:198:30: error: expected primary-expression before ‘:’ token
+./draco/metadata/metadata.h:198:17: error: label ‘sub_metadata’ used but not defined
+     for (auto &&sub_metadata : metadata.sub_metadatas_) {
+                 ^
+In file included from ./draco/point_cloud/point_cloud.h:23:0,
+                 from ./draco/mesh/mesh.h:25,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/metadata/geometry_metadata.h: At global scope:
+./draco/metadata/geometry_metadata.h:63:34: error: ‘std::unique_ptr’ has not been declared
+   bool AddAttributeMetadata(std::unique_ptr<AttributeMetadata> att_metadata);
+                                  ^
+./draco/metadata/geometry_metadata.h:63:44: error: expected ‘,’ or ‘...’ before ‘<’ token
+   bool AddAttributeMetadata(std::unique_ptr<AttributeMetadata> att_metadata);
+                                            ^
+./draco/metadata/geometry_metadata.h:98:21: error: ‘unique_ptr’ is not a member of ‘std’
+   const std::vector<std::unique_ptr<AttributeMetadata>> &attribute_metadatas()
+                     ^
+./draco/metadata/geometry_metadata.h:98:21: error: ‘unique_ptr’ is not a member of ‘std’
+./draco/metadata/geometry_metadata.h:98:78: error: a function call cannot appear in a constant-expression
+   const std::vector<std::unique_ptr<AttributeMetadata>> &attribute_metadatas()
+                                                                              ^
+./draco/metadata/geometry_metadata.h:98:78: error: ‘&’ cannot appear in a constant-expression
+./draco/metadata/geometry_metadata.h:99:7: error: template argument 1 is invalid
+       const {
+       ^
+./draco/metadata/geometry_metadata.h:99:7: error: template argument 2 is invalid
+./draco/metadata/geometry_metadata.h:99:13: error: expected unqualified-id before ‘{’ token
+       const {
+             ^
+./draco/metadata/geometry_metadata.h:104:15: error: ‘unique_ptr’ is not a member of ‘std’
+   std::vector<std::unique_ptr<AttributeMetadata>> att_metadatas_;
+               ^
+./draco/metadata/geometry_metadata.h:104:15: error: ‘unique_ptr’ is not a member of ‘std’
+./draco/metadata/geometry_metadata.h:104:51: error: ‘att_metadatas_’ was not declared in this scope
+   std::vector<std::unique_ptr<AttributeMetadata>> att_metadatas_;
+                                                   ^
+./draco/metadata/geometry_metadata.h:104:51: error: template argument 1 is invalid
+./draco/metadata/geometry_metadata.h:104:51: error: template argument 2 is invalid
+./draco/metadata/geometry_metadata.h: In member function ‘void draco::GeometryMetadata::DeleteAttributeMetadataByUniqueId(int32_t)’:
+./draco/metadata/geometry_metadata.h:66:15: error: ‘itr’ does not name a type
+     for (auto itr = att_metadatas_.begin(); itr != att_metadatas_.end();
+               ^
+./draco/metadata/geometry_metadata.h:66:45: error: expected ‘;’ before ‘itr’
+     for (auto itr = att_metadatas_.begin(); itr != att_metadatas_.end();
+                                             ^
+./draco/metadata/geometry_metadata.h:66:45: error: ‘itr’ was not declared in this scope
+./draco/metadata/geometry_metadata.h:66:52: error: ‘att_metadatas_’ was not declared in this scope
+     for (auto itr = att_metadatas_.begin(); itr != att_metadatas_.end();
+                                                    ^
+./draco/metadata/geometry_metadata.h: In member function ‘const draco::AttributeMetadata* draco::GeometryMetadata::GetAttributeMetadataByUniqueId(int32_t) const’:
+./draco/metadata/geometry_metadata.h:79:15: error: expected unqualified-id before ‘&&’ token
+     for (auto &&att_metadata : att_metadatas_) {
+               ^
+./draco/metadata/geometry_metadata.h:79:15: error: expected ‘;’ before ‘&&’ token
+./draco/metadata/geometry_metadata.h:79:30: error: expected ‘;’ before ‘:’ token
+     for (auto &&att_metadata : att_metadatas_) {
+                              ^
+./draco/metadata/geometry_metadata.h:79:30: error: expected primary-expression before ‘:’ token
+./draco/metadata/geometry_metadata.h:79:30: error: expected ‘)’ before ‘:’ token
+./draco/metadata/geometry_metadata.h:79:30: error: expected primary-expression before ‘:’ token
+./draco/metadata/geometry_metadata.h:84:12: error: ‘nullptr’ was not declared in this scope
+     return nullptr;
+            ^
+./draco/metadata/geometry_metadata.h:79:17: error: label ‘att_metadata’ used but not defined
+     for (auto &&att_metadata : att_metadatas_) {
+                 ^
+./draco/metadata/geometry_metadata.h: In member function ‘draco::AttributeMetadata* draco::GeometryMetadata::attribute_metadata(int32_t)’:
+./draco/metadata/geometry_metadata.h:90:15: error: expected unqualified-id before ‘&&’ token
+     for (auto &&att_metadata : att_metadatas_) {
+               ^
+./draco/metadata/geometry_metadata.h:90:15: error: expected ‘;’ before ‘&&’ token
+./draco/metadata/geometry_metadata.h:90:30: error: expected ‘;’ before ‘:’ token
+     for (auto &&att_metadata : att_metadatas_) {
+                              ^
+./draco/metadata/geometry_metadata.h:90:30: error: expected primary-expression before ‘:’ token
+./draco/metadata/geometry_metadata.h:90:30: error: expected ‘)’ before ‘:’ token
+./draco/metadata/geometry_metadata.h:90:30: error: expected primary-expression before ‘:’ token
+./draco/metadata/geometry_metadata.h:95:12: error: ‘nullptr’ was not declared in this scope
+     return nullptr;
+            ^
+./draco/metadata/geometry_metadata.h:90:17: error: label ‘att_metadata’ used but not defined
+     for (auto &&att_metadata : att_metadatas_) {
+                 ^
+./draco/metadata/geometry_metadata.h: In member function ‘size_t draco::GeometryMetadataHasher::operator()(const draco::GeometryMetadata&) const’:
+./draco/metadata/geometry_metadata.h:112:28: error: ‘const class draco::GeometryMetadata’ has no member named ‘att_metadatas_’
+     size_t hash = metadata.att_metadatas_.size();
+                            ^
+./draco/metadata/geometry_metadata.h:114:15: error: expected unqualified-id before ‘&&’ token
+     for (auto &&att_metadata : metadata.att_metadatas_) {
+               ^
+./draco/metadata/geometry_metadata.h:114:15: error: expected ‘;’ before ‘&&’ token
+./draco/metadata/geometry_metadata.h:114:30: error: expected ‘;’ before ‘:’ token
+     for (auto &&att_metadata : metadata.att_metadatas_) {
+                              ^
+./draco/metadata/geometry_metadata.h:114:30: error: expected primary-expression before ‘:’ token
+./draco/metadata/geometry_metadata.h:114:30: error: expected ‘)’ before ‘:’ token
+./draco/metadata/geometry_metadata.h:114:30: error: expected primary-expression before ‘:’ token
+./draco/metadata/geometry_metadata.h:114:17: error: label ‘att_metadata’ used but not defined
+     for (auto &&att_metadata : metadata.att_metadatas_) {
+                 ^
+In file included from ./draco/mesh/mesh.h:25:0,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/point_cloud/point_cloud.h: At global scope:
+./draco/point_cloud/point_cloud.h:33:27: warning: defaulted and deleted functions only available with -std=c++11 or -std=gnu++11
+   virtual ~PointCloud() = default;
+                           ^
+./draco/point_cloud/point_cloud.h:80:25: error: ‘std::unique_ptr’ has not been declared
+   int AddAttribute(std::unique_ptr<PointAttribute> pa);
+                         ^
+./draco/point_cloud/point_cloud.h:80:35: error: expected ‘,’ or ‘...’ before ‘<’ token
+   int AddAttribute(std::unique_ptr<PointAttribute> pa);
+                                   ^
+./draco/point_cloud/point_cloud.h:99:8: error: ‘unique_ptr’ in namespace ‘std’ does not name a template type
+   std::unique_ptr<PointAttribute> CreateAttribute(
+        ^
+./draco/point_cloud/point_cloud.h:105:46: error: ‘std::unique_ptr’ has not been declared
+   virtual void SetAttribute(int att_id, std::unique_ptr<PointAttribute> pa);
+                                              ^
+./draco/point_cloud/point_cloud.h:105:56: error: expected ‘,’ or ‘...’ before ‘<’ token
+   virtual void SetAttribute(int att_id, std::unique_ptr<PointAttribute> pa);
+                                                        ^
+./draco/point_cloud/point_cloud.h:127:25: error: ‘std::unique_ptr’ has not been declared
+   void AddMetadata(std::unique_ptr<GeometryMetadata> metadata) {
+                         ^
+./draco/point_cloud/point_cloud.h:127:35: error: expected ‘,’ or ‘...’ before ‘<’ token
+   void AddMetadata(std::unique_ptr<GeometryMetadata> metadata) {
+                                   ^
+./draco/point_cloud/point_cloud.h:133:34: error: ‘std::unique_ptr’ has not been declared
+                             std::unique_ptr<AttributeMetadata> metadata) {
+                                  ^
+./draco/point_cloud/point_cloud.h:133:44: error: expected ‘,’ or ‘...’ before ‘<’ token
+                             std::unique_ptr<AttributeMetadata> metadata) {
+                                            ^
+./draco/point_cloud/point_cloud.h:194:8: error: ‘unique_ptr’ in namespace ‘std’ does not name a template type
+   std::unique_ptr<GeometryMetadata> metadata_;
+        ^
+./draco/point_cloud/point_cloud.h:197:15: error: ‘unique_ptr’ is not a member of ‘std’
+   std::vector<std::unique_ptr<PointAttribute>> attributes_;
+               ^
+./draco/point_cloud/point_cloud.h:197:15: error: ‘unique_ptr’ is not a member of ‘std’
+./draco/point_cloud/point_cloud.h:197:48: error: ‘attributes_’ was not declared in this scope
+   std::vector<std::unique_ptr<PointAttribute>> attributes_;
+                                                ^
+./draco/point_cloud/point_cloud.h:197:48: error: template argument 1 is invalid
+./draco/point_cloud/point_cloud.h:197:48: error: template argument 2 is invalid
+./draco/point_cloud/point_cloud.h: In member function ‘int32_t draco::PointCloud::num_attributes() const’:
+./draco/point_cloud/point_cloud.h:62:33: error: ‘attributes_’ was not declared in this scope
+     return static_cast<int32_t>(attributes_.size());
+                                 ^
+./draco/point_cloud/point_cloud.h: In member function ‘const draco::PointAttribute* draco::PointCloud::attribute(int32_t) const’:
+./draco/point_cloud/point_cloud.h:67:12: error: ‘attributes_’ was not declared in this scope
+     return attributes_[att_id].get();
+            ^
+./draco/point_cloud/point_cloud.h: In member function ‘draco::PointAttribute* draco::PointCloud::attribute(int32_t)’:
+./draco/point_cloud/point_cloud.h:75:12: error: ‘attributes_’ was not declared in this scope
+     return attributes_[att_id].get();
+            ^
+./draco/point_cloud/point_cloud.h: In member function ‘void draco::PointCloud::AddMetadata(int)’:
+./draco/point_cloud/point_cloud.h:128:5: error: ‘metadata_’ was not declared in this scope
+     metadata_ = std::move(metadata);
+     ^
+./draco/point_cloud/point_cloud.h:128:17: error: ‘move’ is not a member of ‘std’
+     metadata_ = std::move(metadata);
+                 ^
+./draco/point_cloud/point_cloud.h: In member function ‘void draco::PointCloud::AddAttributeMetadata(int32_t, int)’:
+./draco/point_cloud/point_cloud.h:134:10: error: ‘metadata_’ was not declared in this scope
+     if (!metadata_.get()) {
+          ^
+./draco/point_cloud/point_cloud.h:135:19: error: ‘unique_ptr’ is not a member of ‘std’
+       metadata_ = std::unique_ptr<GeometryMetadata>(new GeometryMetadata());
+                   ^
+./draco/point_cloud/point_cloud.h:135:51: error: expected primary-expression before ‘>’ token
+       metadata_ = std::unique_ptr<GeometryMetadata>(new GeometryMetadata());
+                                                   ^
+./draco/point_cloud/point_cloud.h:138:13: error: invalid use of member function (did you forget the ‘()’ ?)
+     metadata->set_att_unique_id(att_unique_id);
+             ^
+./draco/point_cloud/point_cloud.h:138:13: error: base operand of ‘->’ is not a pointer
+./draco/point_cloud/point_cloud.h:139:5: error: ‘metadata_’ was not declared in this scope
+     metadata_->AddAttributeMetadata(std::move(metadata));
+     ^
+./draco/point_cloud/point_cloud.h:139:37: error: ‘move’ is not a member of ‘std’
+     metadata_->AddAttributeMetadata(std::move(metadata));
+                                     ^
+./draco/point_cloud/point_cloud.h: In member function ‘const draco::AttributeMetadata* draco::PointCloud::GetAttributeMetadataByAttributeId(int32_t) const’:
+./draco/point_cloud/point_cloud.h:144:9: error: ‘metadata_’ was not declared in this scope
+     if (metadata_ == nullptr)
+         ^
+./draco/point_cloud/point_cloud.h:144:22: error: ‘nullptr’ was not declared in this scope
+     if (metadata_ == nullptr)
+                      ^
+./draco/point_cloud/point_cloud.h:147:12: error: ‘metadata_’ was not declared in this scope
+     return metadata_->GetAttributeMetadataByUniqueId(unique_id);
+            ^
+./draco/point_cloud/point_cloud.h: In member function ‘const draco::AttributeMetadata* draco::PointCloud::GetAttributeMetadataByStringEntry(const string&, const string&) const’:
+./draco/point_cloud/point_cloud.h:153:9: error: ‘metadata_’ was not declared in this scope
+     if (metadata_ == nullptr)
+         ^
+./draco/point_cloud/point_cloud.h:153:22: error: ‘nullptr’ was not declared in this scope
+     if (metadata_ == nullptr)
+                      ^
+./draco/point_cloud/point_cloud.h:155:12: error: ‘metadata_’ was not declared in this scope
+     return metadata_->GetAttributeMetadataByStringEntry(name, value);
+            ^
+./draco/point_cloud/point_cloud.h: In member function ‘int draco::PointCloud::GetAttributeIdByMetadataEntry(const string&, const string&) const’:
+./draco/point_cloud/point_cloud.h:161:9: error: ‘metadata_’ was not declared in this scope
+     if (metadata_ == nullptr)
+         ^
+./draco/point_cloud/point_cloud.h:161:22: error: ‘nullptr’ was not declared in this scope
+     if (metadata_ == nullptr)
+                      ^
+./draco/point_cloud/point_cloud.h:164:9: error: ‘metadata_’ was not declared in this scope
+         metadata_->GetAttributeMetadataByStringEntry(name, value);
+         ^
+./draco/point_cloud/point_cloud.h: In member function ‘const draco::GeometryMetadata* draco::PointCloud::GetMetadata() const’:
+./draco/point_cloud/point_cloud.h:171:56: error: ‘metadata_’ was not declared in this scope
+   const GeometryMetadata *GetMetadata() const { return metadata_.get(); }
+                                                        ^
+./draco/point_cloud/point_cloud.h: In member function ‘draco::GeometryMetadata* draco::PointCloud::metadata()’:
+./draco/point_cloud/point_cloud.h:174:41: error: ‘metadata_’ was not declared in this scope
+   GeometryMetadata *metadata() { return metadata_.get(); }
+                                         ^
+./draco/point_cloud/point_cloud.h: In member function ‘size_t draco::PointCloudHasher::operator()(const draco::PointCloud&) const’:
+./draco/point_cloud/point_cloud.h:217:27: error: ‘const class draco::PointCloud’ has no member named ‘attributes_’
+     hash = HashCombine(pc.attributes_.size(), hash);
+                           ^
+./draco/point_cloud/point_cloud.h:226:45: error: ‘const class draco::PointCloud’ has no member named ‘attributes_’
+     for (int i = 0; i < static_cast<int>(pc.attributes_.size()); ++i) {
+                                             ^
+./draco/point_cloud/point_cloud.h:228:41: error: ‘const class draco::PointCloud’ has no member named ‘attributes_’
+       hash = HashCombine(att_hasher(*pc.attributes_[i]), hash);
+                                         ^
+./draco/point_cloud/point_cloud.h:232:12: error: ‘const class draco::PointCloud’ has no member named ‘metadata_’
+     if (pc.metadata_.get()) {
+            ^
+./draco/point_cloud/point_cloud.h:233:46: error: ‘const class draco::PointCloud’ has no member named ‘metadata_’
+       hash = HashCombine(metadata_hasher(*pc.metadata_.get()), hash);
+                                              ^
+In file included from draco/mesh/triangle_soup_mesh_builder.h:20:0,
+                 from testMesh.cc:1:
+./draco/mesh/mesh.h: At global scope:
+./draco/mesh/mesh.h:46:16: error: ‘array’ in namespace ‘std’ does not name a template type
+   typedef std::array<PointIndex, 3> Face;
+                ^
+./draco/mesh/mesh.h:50:22: error: ‘Face’ does not name a type
+   void AddFace(const Face &face) { faces_.push_back(face); }
+                      ^
+./draco/mesh/mesh.h:52:41: error: ‘Face’ does not name a type
+   void SetFace(FaceIndex face_id, const Face &face) {
+                                         ^
+./draco/mesh/mesh.h:66:9: error: ‘Face’ does not name a type
+   const Face &face(FaceIndex face_id) const {
+         ^
+./draco/mesh/mesh.h:72:38: error: ‘std::unique_ptr’ has not been declared
+   void SetAttribute(int att_id, std::unique_ptr<PointAttribute> pa) override {
+                                      ^
+./draco/mesh/mesh.h:72:48: error: expected ‘,’ or ‘...’ before ‘<’ token
+   void SetAttribute(int att_id, std::unique_ptr<PointAttribute> pa) override {
+                                                ^
+./draco/mesh/mesh.h:72:67: warning: override controls (override/final) only available with -std=c++11 or -std=gnu++11
+   void SetAttribute(int att_id, std::unique_ptr<PointAttribute> pa) override {
+                                                                   ^
+./draco/mesh/mesh.h:79:34: warning: override controls (override/final) only available with -std=c++11 or -std=gnu++11
+   void DeleteAttribute(int att_id) override {
+                                  ^
+./draco/mesh/mesh.h:118:54: warning: override controls (override/final) only available with -std=c++11 or -std=gnu++11
+       const std::vector<PointIndex> &unique_point_ids) override;
+                                                      ^
+./draco/mesh/mesh.h:127:30: error: ‘Face’ was not declared in this scope
+   IndexTypeVector<FaceIndex, Face> faces_;
+                              ^
+./draco/mesh/mesh.h:127:34: error: template argument 2 is invalid
+   IndexTypeVector<FaceIndex, Face> faces_;
+                                  ^
+./draco/mesh/mesh.h: In member function ‘void draco::Mesh::AddFace(const int&)’:
+./draco/mesh/mesh.h:50:43: error: request for member ‘push_back’ in ‘((draco::Mesh*)this)->draco::Mesh::faces_’, which is of non-class type ‘int’
+   void AddFace(const Face &face) { faces_.push_back(face); }
+                                           ^
+./draco/mesh/mesh.h: In member function ‘void draco::Mesh::SetFace(draco::FaceIndex, const int&)’:
+./draco/mesh/mesh.h:53:49: error: request for member ‘size’ in ‘((draco::Mesh*)this)->draco::Mesh::faces_’, which is of non-class type ‘int’
+     if (face_id >= static_cast<uint32_t>(faces_.size())) {
+                                                 ^
+./draco/mesh/mesh.h:54:14: error: request for member ‘resize’ in ‘((draco::Mesh*)this)->draco::Mesh::faces_’, which is of non-class type ‘int’
+       faces_.resize(face_id.value() + 1, Face());
+              ^
+./draco/mesh/mesh.h:54:29: error: ‘draco::FaceIndex {aka class draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>}’ has no member named ‘value’
+       faces_.resize(face_id.value() + 1, Face());
+                             ^
+./draco/mesh/mesh.h:54:47: error: ‘Face’ was not declared in this scope
+       faces_.resize(face_id.value() + 1, Face());
+                                               ^
+./draco/mesh/mesh.h:56:11: error: no match for ‘operator[]’ (operand types are ‘int’ and ‘draco::FaceIndex {aka draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>}’)
+     faces_[face_id] = face;
+           ^
+./draco/mesh/mesh.h: In member function ‘void draco::Mesh::SetNumFaces(size_t)’:
+./draco/mesh/mesh.h:61:47: error: request for member ‘resize’ in ‘((draco::Mesh*)this)->draco::Mesh::faces_’, which is of non-class type ‘int’
+   void SetNumFaces(size_t num_faces) { faces_.resize(num_faces, Face()); }
+                                               ^
+./draco/mesh/mesh.h:61:70: error: ‘Face’ was not declared in this scope
+   void SetNumFaces(size_t num_faces) { faces_.resize(num_faces, Face()); }
+                                                                      ^
+./draco/mesh/mesh.h: In member function ‘draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>::ValueType draco::Mesh::num_faces() const’:
+./draco/mesh/mesh.h:64:41: error: request for member ‘size’ in ‘((const draco::Mesh*)this)->draco::Mesh::faces_’, which is of non-class type ‘const int’
+     return static_cast<uint32_t>(faces_.size());
+                                         ^
+./draco/mesh/mesh.h: In member function ‘virtual void draco::Mesh::SetAttribute(int, int)’:
+./draco/mesh/mesh.h:73:38: error: ‘move’ is not a member of ‘std’
+     PointCloud::SetAttribute(att_id, std::move(pa));
+                                      ^
+./draco/mesh/mesh.h:73:48: error: ‘pa’ was not declared in this scope
+     PointCloud::SetAttribute(att_id, std::move(pa));
+                                                ^
+./draco/mesh/mesh.h: In member function ‘draco::PointIndex draco::Mesh::CornerToPointId(int) const’:
+./draco/mesh/mesh.h:96:15: error: ‘kInvalidCornerIndex’ was not declared in this scope
+     if (ci == kInvalidCornerIndex.value())
+               ^
+./draco/mesh/mesh.h:97:14: error: ‘kInvalidPointIndex’ was not declared in this scope
+       return kInvalidPointIndex;
+              ^
+./draco/mesh/mesh.h:98:18: error: ‘const class draco::Mesh’ has no member named ‘face’
+     return this->face(FaceIndex(ci / 3))[ci % 3];
+                  ^
+./draco/mesh/mesh.h:98:39: error: no matching function for call to ‘draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>::IndexType(int)’
+     return this->face(FaceIndex(ci / 3))[ci % 3];
+                                       ^
+In file included from ./draco/attributes/geometry_indices.h:22:0,
+                 from ./draco/mesh/mesh.h:20,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/core/draco_index_type.h:64:7: note: candidate: draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>::IndexType()
+ class IndexType {
+       ^
+./draco/core/draco_index_type.h:64:7: note:   candidate expects 0 arguments, 1 provided
+./draco/core/draco_index_type.h:64:7: note: candidate: draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>::IndexType(const draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>&)
+./draco/core/draco_index_type.h:64:7: note:   no known conversion for argument 1 from ‘int’ to ‘const draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>&’
+In file included from draco/mesh/triangle_soup_mesh_builder.h:20:0,
+                 from testMesh.cc:1:
+./draco/mesh/mesh.h: In member function ‘draco::PointIndex draco::Mesh::CornerToPointId(draco::CornerIndex) const’:
+./draco/mesh/mesh.h:103:37: error: ‘draco::CornerIndex {aka class draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>}’ has no member named ‘value’
+     return this->CornerToPointId(ci.value());
+                                     ^
+./draco/mesh/mesh.h: In member function ‘size_t draco::MeshHasher::operator()(const draco::Mesh&) const’:
+./draco/mesh/mesh.h:140:23: error: no matching function for call to ‘draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>::IndexType(int)’
+     for (FaceIndex i(0); i < static_cast<uint32_t>(mesh.faces_.size()); ++i) {
+                       ^
+In file included from ./draco/attributes/geometry_indices.h:22:0,
+                 from ./draco/mesh/mesh.h:20,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/core/draco_index_type.h:64:7: note: candidate: draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>::IndexType()
+ class IndexType {
+       ^
+./draco/core/draco_index_type.h:64:7: note:   candidate expects 0 arguments, 1 provided
+./draco/core/draco_index_type.h:64:7: note: candidate: draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>::IndexType(const draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>&)
+./draco/core/draco_index_type.h:64:7: note:   no known conversion for argument 1 from ‘int’ to ‘const draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>&’
+In file included from draco/mesh/triangle_soup_mesh_builder.h:20:0,
+                 from testMesh.cc:1:
+./draco/mesh/mesh.h:140:64: error: request for member ‘size’ in ‘mesh.draco::Mesh::faces_’, which is of non-class type ‘const int’
+     for (FaceIndex i(0); i < static_cast<uint32_t>(mesh.faces_.size()); ++i) {
+                                                                ^
+./draco/mesh/mesh.h:142:39: error: no match for ‘operator[]’ (operand types are ‘const int’ and ‘draco::FaceIndex {aka draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>}’)
+         hash = HashCombine(mesh.faces_[i][j].value(), hash);
+                                       ^
+In file included from testMesh.cc:1:0:
+draco/mesh/triangle_soup_mesh_builder.h: At global scope:
+draco/mesh/triangle_soup_mesh_builder.h:54:8: error: ‘unique_ptr’ in namespace ‘std’ does not name a template type
+   std::unique_ptr<Mesh> Finalize();
+        ^
+draco/mesh/triangle_soup_mesh_builder.h:59:8: error: ‘unique_ptr’ in namespace ‘std’ does not name a template type
+   std::unique_ptr<Mesh> mesh_;
+        ^
+testMesh.cc: In function ‘int main()’:
+testMesh.cc:8:75: error: ‘draco::DataType’ is not a class or namespace
+             mb.AddAttribute(draco::GeometryAttribute::POSITION, 3, draco::DataType::DT_FLOAT32);
+                                                                           ^
+testMesh.cc:23:40: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11
+         std::vector<unsigned int> faces{0, 2, 4, 2, 4, 6, 2, 3, 6, 3, 6, 7, 0, 1, 2, 1, 2, 3, 4, 5, 6, 5, 6, 7, 1, 3, 7, 1, 5, 7, 0, 1, 5, 1, 4, 5};
+                                        ^
+testMesh.cc:23:147: error: in C++98 ‘faces’ must be initialized by constructor, not by ‘{...}’
+         std::vector<unsigned int> faces{0, 2, 4, 2, 4, 6, 2, 3, 6, 3, 6, 7, 0, 1, 2, 1, 2, 3, 4, 5, 6, 5, 6, 7, 1, 3, 7, 1, 5, 7, 0, 1, 5, 1, 4, 5};
+                                                                                                                                                   ^
+testMesh.cc:23:147: error: no matching function for call to ‘std::vector<unsigned int>::vector(<brace-enclosed initializer list>)’
+In file included from /usr/include/c++/5/vector:64:0,
+                 from ./draco/core/data_buffer.h:20,
+                 from ./draco/attributes/attribute_transform_data.h:21,
+                 from ./draco/attributes/point_attribute.h:22,
+                 from ./draco/point_cloud/point_cloud.h:20,
+                 from ./draco/mesh/mesh.h:25,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+/usr/include/c++/5/bits/stl_vector.h:407:9: note: candidate: template<class _InputIterator> std::vector<_Tp, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&)
+         vector(_InputIterator __first, _InputIterator __last,
+         ^
+/usr/include/c++/5/bits/stl_vector.h:407:9: note:   template argument deduction/substitution failed:
+testMesh.cc:23:147: note:   cannot convert ‘4’ (type ‘int’) to type ‘const allocator_type& {aka const std::allocator<unsigned int>&}’
+         std::vector<unsigned int> faces{0, 2, 4, 2, 4, 6, 2, 3, 6, 3, 6, 7, 0, 1, 2, 1, 2, 3, 4, 5, 6, 5, 6, 7, 1, 3, 7, 1, 5, 7, 0, 1, 5, 1, 4, 5};
+                                                                                                                                                   ^
+In file included from /usr/include/c++/5/vector:64:0,
+                 from ./draco/core/data_buffer.h:20,
+                 from ./draco/attributes/attribute_transform_data.h:21,
+                 from ./draco/attributes/point_attribute.h:22,
+                 from ./draco/point_cloud/point_cloud.h:20,
+                 from ./draco/mesh/mesh.h:25,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+/usr/include/c++/5/bits/stl_vector.h:318:7: note: candidate: std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = unsigned int; _Alloc = std::allocator<unsigned int>]
+       vector(const vector& __x)
+       ^
+/usr/include/c++/5/bits/stl_vector.h:318:7: note:   candidate expects 1 argument, 36 provided
+/usr/include/c++/5/bits/stl_vector.h:303:7: note: candidate: std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = unsigned int; _Alloc = std::allocator<unsigned int>; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::value_type = unsigned int; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<unsigned int>]
+       vector(size_type __n, const value_type& __value = value_type(),
+       ^
+/usr/include/c++/5/bits/stl_vector.h:303:7: note:   candidate expects 3 arguments, 36 provided
+/usr/include/c++/5/bits/stl_vector.h:264:7: note: candidate: std::vector<_Tp, _Alloc>::vector(const allocator_type&) [with _Tp = unsigned int; _Alloc = std::allocator<unsigned int>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<unsigned int>]
+       vector(const allocator_type& __a) _GLIBCXX_NOEXCEPT
+       ^
+/usr/include/c++/5/bits/stl_vector.h:264:7: note:   candidate expects 1 argument, 36 provided
+/usr/include/c++/5/bits/stl_vector.h:253:7: note: candidate: std::vector<_Tp, _Alloc>::vector() [with _Tp = unsigned int; _Alloc = std::allocator<unsigned int>]
+       vector()
+       ^
+/usr/include/c++/5/bits/stl_vector.h:253:7: note:   candidate expects 0 arguments, 36 provided
+testMesh.cc:27:18: error: ‘point1’ does not name a type
+             auto point1 = points[faces[i]];
+                  ^
+testMesh.cc:28:18: error: ‘point2’ does not name a type
+             auto point2 = points[faces[i+1]];
+                  ^
+testMesh.cc:29:18: error: ‘point3’ does not name a type
+             auto point3 = points[faces[i+2]];
+                  ^
+testMesh.cc:30:72: error: no matching function for call to ‘draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>::IndexType(int&)’
+             mb.SetAttributeValuesForFace(pos_att_id, draco::FaceIndex(i), static_cast<void *>(&point1), static_cast<void *>(&point2), static_cast<void*>(&point3));
+                                                                        ^
+In file included from ./draco/attributes/geometry_indices.h:22:0,
+                 from ./draco/mesh/mesh.h:20,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/core/draco_index_type.h:64:7: note: candidate: draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>::IndexType()
+ class IndexType {
+       ^
+./draco/core/draco_index_type.h:64:7: note:   candidate expects 0 arguments, 1 provided
+./draco/core/draco_index_type.h:64:7: note: candidate: draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>::IndexType(const draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>&)
+./draco/core/draco_index_type.h:64:7: note:   no known conversion for argument 1 from ‘int’ to ‘const draco::IndexType<unsigned int, draco::FaceIndex_tag_type_>&’
+testMesh.cc:30:96: error: ‘point1’ was not declared in this scope
+             mb.SetAttributeValuesForFace(pos_att_id, draco::FaceIndex(i), static_cast<void *>(&point1), static_cast<void *>(&point2), static_cast<void*>(&point3));
+                                                                                                ^
+testMesh.cc:30:126: error: ‘point2’ was not declared in this scope
+             mb.SetAttributeValuesForFace(pos_att_id, draco::FaceIndex(i), static_cast<void *>(&point1), static_cast<void *>(&point2), static_cast<void*>(&point3));
+                                                                                                                              ^
+testMesh.cc:30:155: error: ‘point3’ was not declared in this scope
+             mb.SetAttributeValuesForFace(pos_att_id, draco::FaceIndex(i), static_cast<void *>(&point1), static_cast<void *>(&point2), static_cast<void*>(&point3));
+                                                                                                                                                           ^
+testMesh.cc:36:9: error: ‘unique_ptr’ is not a member of ‘std’
+         std::unique_ptr<draco::Mesh> mesh = mb.Finalize();
+         ^
+testMesh.cc:36:36: error: expected primary-expression before ‘>’ token
+         std::unique_ptr<draco::Mesh> mesh = mb.Finalize();
+                                    ^
+testMesh.cc:36:38: error: ‘mesh’ was not declared in this scope
+         std::unique_ptr<draco::Mesh> mesh = mb.Finalize();
+                                      ^
+testMesh.cc:36:48: error: ‘class draco::TriangleSoupMeshBuilder’ has no member named ‘Finalize’
+         std::unique_ptr<draco::Mesh> mesh = mb.Finalize();
+                                                ^
+In file included from ./draco/attributes/point_attribute.h:24:0,
+                 from ./draco/point_cloud/point_cloud.h:20,
+                 from ./draco/mesh/mesh.h:25,
+                 from draco/mesh/triangle_soup_mesh_builder.h:20,
+                 from testMesh.cc:1:
+./draco/core/draco_index_type_vector.h: In instantiation of ‘draco::IndexTypeVector<IndexTypeT, ValueTypeT>::const_reference draco::IndexTypeVector<IndexTypeT, ValueTypeT>::operator[](const IndexTypeT&) const [with IndexTypeT = draco::IndexType<unsigned int, draco::PointIndex_tag_type_>; ValueTypeT = draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>; draco::IndexTypeVector<IndexTypeT, ValueTypeT>::const_reference = const draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>&]’:
+./draco/attributes/point_attribute.h:54:36:   required from here
+./draco/core/draco_index_type_vector.h:61:19: error: ‘const class draco::IndexType<unsigned int, draco::PointIndex_tag_type_>’ has no member named ‘value’
+     return vector_[index.value()];
+                   ^
+./draco/core/draco_index_type_vector.h: In instantiation of ‘draco::IndexTypeVector<IndexTypeT, ValueTypeT>::reference draco::IndexTypeVector<IndexTypeT, ValueTypeT>::operator[](const IndexTypeT&) [with IndexTypeT = draco::IndexType<unsigned int, draco::PointIndex_tag_type_>; ValueTypeT = draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>; draco::IndexTypeVector<IndexTypeT, ValueTypeT>::reference = draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>&]’:
+./draco/attributes/point_attribute.h:92:29:   required from here
+./draco/core/draco_index_type_vector.h:58:19: error: ‘const class draco::IndexType<unsigned int, draco::PointIndex_tag_type_>’ has no member named ‘value’
+     return vector_[index.value()];
+                   ^

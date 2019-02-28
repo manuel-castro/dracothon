@@ -1,0 +1,8 @@
+UNKNOWN.egg-info/
+_skbuild/
+temp/
+*.ply
+*.drc
+*.so
+*.pyc
+dracothon/__pycache__/
