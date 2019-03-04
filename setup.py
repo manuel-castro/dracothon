@@ -6,7 +6,7 @@ from skbuild.constants import CMAKE_INSTALL_DIR
 src_dir = './src'
 lib_dir = os.path.join(CMAKE_INSTALL_DIR, 'lib/')
 
-# cython --cplus -I./_skbuild/linux-x86_64-3.6/cmake-install/include/draco/ ./src/_testScikit.pyx
+# cython --cplus -3 -I./_skbuild/linux-x86_64-3.6/cmake-install/include/draco/ ./src/_testScikit.pyx
 
 setup(
     name='dracothon',

@@ -11,38 +11,6 @@ TestScikit::TestScikit() {}
 
 TestScikit::~TestScikit() {}
 
-int TestScikit::get_draco_encoded_meshCV(const std::vector<float> &points, const std::vector<unsigned int> &faces, const char **bytes_ptr, std::size_t *bytes_len)
-{
-
-  draco::TriangleSoupMeshBuilder mb;
-  mb.Start(faces.size());
-  const int pos_att_id =
-    mb.AddAttribute(draco::GeometryAttribute::POSITION, 3, draco::DataType::DT_FLOAT32);
-
-  for (std::size_t i = 0; i < faces.size(); i += 3) {
-    auto point1Index = faces[i]*3;
-    auto point2Index = faces[i+1]*3;
-    auto point3Index = faces[i+2]*3;
-    mb.SetAttributeValuesForFace(pos_att_id, draco::FaceIndex(i), draco::Vector3f(points[point1Index], points[point1Index+1], points[point1Index+2]).data(), draco::Vector3f(points[point2Index], points[point2Index+1], points[point2Index+2]).data(), draco::Vector3f(points[point3Index], points[point3Index+1], points[point3Index+2]).data());  
-  }
-
-  std::unique_ptr<draco::Mesh> ptr_mesh = mb.Finalize();
-  draco::Mesh *mesh = ptr_mesh.get();
-  draco::Encoder encoder;
-  encoder.SetAttributeQuantization(draco::GeometryAttribute::POSITION, 14);
-  encoder.SetSpeedOptions(9, 9);
-  draco::EncoderBuffer buffer;
-  const draco::Status status = encoder.EncodeMeshToBuffer(*mesh, &buffer);
-  printf("after encoder setup\n");
-//   const std::string &file = "meshTest" + std::to_string(remapped_id) + ".drc";
-  std::ofstream out_file("dracoTestScikit.drc", std::ios::binary);
-  out_file.write(buffer.data(), buffer.size());
-  printf("after writing\n");
-  *bytes_ptr = buffer.data();
-  *bytes_len = buffer.size();
-  return 0;
-}
-
 // TODO: Add support for normals
 MeshObject TestScikit::decode_buffer(const char *buffer, std::size_t buffer_len) {
   draco::DecoderBuffer decoderBuffer;
@@ -78,7 +46,7 @@ MeshObject TestScikit::decode_buffer(const char *buffer, std::size_t buffer_len)
   return meshObject;
 }
 
-void encode_mesh(const std::vector<float> &points, const std::vector<unsigned int> &faces, const char **bytes_ptr, size_t *bytes_len, int quantization_bits, int compression_level, float quantization_range, const float *quantization_origin) {
+std::vector<unsigned char> TestScikit::encode_mesh(const std::vector<float> &points, const std::vector<unsigned int> &faces, char *bytes_ptr, std::size_t *bytes_len, int quantization_bits, int compression_level, float quantization_range, const float *quantization_origin) {
   draco::TriangleSoupMeshBuilder mb;
   mb.Start(faces.size());
   const int pos_att_id =
@@ -104,12 +72,6 @@ void encode_mesh(const std::vector<float> &points, const std::vector<unsigned in
   }
   draco::EncoderBuffer buffer;
   const draco::Status status = encoder.EncodeMeshToBuffer(*mesh, &buffer);
-  printf("after encoder setup\n");
-  // const std::string &file = "meshTest" + std::to_string(remapped_id) + ".drc";
-  // std::ofstream out_file("dracoTestScikit.drc", std::ios::binary);
-  // out_file.write(buffer.data(), buffer.size());
-  *bytes_ptr = buffer.data();
-  *bytes_len = buffer.size();
-  printf("after writing\n");
+  return *((std::vector<unsigned char> *)buffer.buffer());
 }
 
