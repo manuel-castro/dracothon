@@ -9,14 +9,13 @@ lib_dir = os.path.join(CMAKE_INSTALL_DIR, 'lib/')
 # cython --cplus -3 -I./_skbuild/linux-x86_64-3.6/cmake-install/include/draco/ ./src/_testScikit.pyx
 
 setup(
-    name='dracothon',
+    name='DracoPy',
     cmake_source_dir='./draco',
-    packages=['dracothon'],
     ext_modules=[
         setuptools.Extension(
-            'dracothon._testScikit',
-            sources=[ os.path.join(src_dir, name) for name in ('_testScikit.cpp', 'testScikit.cpp') ],
-            depends=[ os.path.join(src_dir, 'testScikit.h') ],
+            'DracoPy',
+            sources=[ os.path.join(src_dir, 'DracoPy.cpp') ],
+            depends=[ os.path.join(src_dir, 'DracoPy.h') ],
             language='c++',
             include_dirs = [ os.path.join(CMAKE_INSTALL_DIR, 'include/')],
             extra_compile_args=[

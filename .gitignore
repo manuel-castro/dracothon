@@ -6,3 +6,4 @@ temp/
 *.so
 *.pyc
 dracothon/__pycache__/
+.vscode/
