@@ -21,6 +21,12 @@ class DracoMesh(object):
     def normals(self):
         return self.cython_mesh_struct['normals']
 
+class EncodingOptions(object):
+    def __init__(self, quantization_bits, quantization_range, quantization_origin):
+        self.quantization_bits = quantization_bits
+        self.quantization_range = quantization_range
+        self.quantization_origin = quantization_origin
+
 
 def encode_mesh_to_buffer(points, faces, quantization_bits=14, compression_level=1, quantization_range=0, quantization_origin=None, encode_custom_options=False):
     cdef float* quant_origin = NULL
@@ -40,19 +46,18 @@ def encode_mesh_to_buffer(points, faces, quantization_bits=14, compression_level
     else:
         return bytes(encodedMesh)
 
-def decode_buffer_to_mesh(buffer, encoded_options=False):
+def decode_buffer_to_mesh(buffer):
     cython_mesh_struct = DracoPy.decode_buffer(buffer, len(buffer))
     return DracoMesh(cython_mesh_struct)
 
 def decode_buffer_with_encoded_options_to_mesh(buffer):
-    encoding_options = {}
-    encoding_options.quantization_bits = struct.unpack("=B", buffer[0])
-    encoding_options.quantization_range = struct.unpack("=f", buffer[1:5])
-    encoding_options.quantization_origin = []
+    quantization_bits = buffer[0]
+    quantization_range = struct.unpack("=f", buffer[1:5])
+    quantization_origin = []
     for dim in range(3):
-        encoding_options.quantization_origin.append(struct.unpack("=f", buffer[5+dim*4:9+dim*4]))
+        quantization_origin.append(struct.unpack("=f", buffer[5+dim*4:9+dim*4]))
     cython_mesh_struct = DracoPy.decode_buffer(buffer[17:], len(buffer[17:]))
-    return DracoMesh(cython_mesh_struct, encoding_options)
+    return DracoMesh(cython_mesh_struct, EncodingOptions(quantization_bits, quantization_range, quantization_origin))
     
 
 

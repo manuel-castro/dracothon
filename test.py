@@ -1,9 +1,8 @@
-#from dracothon import PySciKit
 import DracoPy
 import numpy as np
 
 def generateRandomMesh():
-    randomPoints = np.random.normal(low=1000.0, high=30000.0, size=(18000,))
+    randomPoints = np.random.uniform(low=1000.0, high=30000.0, size=(18000,))
     randomFaces = []
     for i in range(11000):
         randomFace = np.random.choice(a=6001, size=3, replace=False)
@@ -12,34 +11,6 @@ def generateRandomMesh():
     mesh['points'] = randomPoints
     mesh['faces'] = randomFaces
     return mesh
-
-def mesh_to_ply(mesh):
-  # FIXME: Storing vertices per face (3) as uchar would save a bit storage
-  #        but I can't figure out how to mix uint8 with uint32 efficiently.
-  vertexct = mesh['num_vertices']
-  trianglect = len(mesh['faces']) // 3
-  mesh
-
-  # Header
-  plydata = bytearray("""ply
-format binary_little_endian 1.0
-element vertex {}
-property float x
-property float y
-property float z
-element face {}
-property list int int vertex_indices
-end_header
-""".format(vertexct, trianglect).encode('utf8'))
-
-  # Vertex data (x y z)
-  plydata.extend(mesh['vertices'].tobytes())
-
-  # Faces (3 f1 f2 f3)
-  plydata.extend(
-      np.insert(mesh['faces'].reshape(-1, 3), 0, 3, axis=1).tobytes())
-
-  return plydata
 
 def mesh_to_obj(mesh, progress=False):
   objdata = []
@@ -53,9 +24,10 @@ def mesh_to_obj(mesh, progress=False):
 
   return objdata
 
-# ps = PySciKit()
 # mesh = generateRandomMesh()
-# dracoBytes = ps.get_draco_encoded_meshCV(mesh['points'], mesh['faces'])
+# dracoBytes = DracoPy.encode_mesh(mesh['points'], mesh['faces'])
+# with open('testCube.obj', 'wb') as g:
+#   g.write(data)
 
 # with open('489766459477108749.drc', 'rb') as f:
 #     file_content = f.read()
@@ -77,15 +49,15 @@ def mesh_to_obj(mesh, progress=False):
 with open('489766459477108749.drc', 'rb') as f:
     file_content = f.read()
     mesh_object = DracoPy.decode_buffer_to_mesh(file_content)
-    # ps.encode_mesh_to_buffer(self, points, faces, quantization_bits=14, compression_level=1, quantization_range=-1, quantization_origin=None)
     dracoBytes = DracoPy.encode_mesh_to_buffer(mesh_object.points, mesh_object.faces, 14, 1, 98298, (393216, 196608, 0), True)
-    # dracoBytes = ps.get_draco_encoded_meshCV(mesh_object['points'], mesh_object['faces'])
     with open('testEnc.drc', 'wb') as g:
       g.write(dracoBytes)
 
 with open('testEnc.drc', 'rb') as h:
     file_content = h.read()
     mesh_object = DracoPy.decode_buffer_with_encoded_options_to_mesh(file_content)
-    print(mesh_object.encoding_options)
+    print(mesh_object.encoding_options.quantization_bits)
+    print(mesh_object.encoding_options.quantization_origin)
+    print(mesh_object.encoding_options.quantization_range)
     print(len(mesh_object.points))
     print(len(mesh_object.faces))
